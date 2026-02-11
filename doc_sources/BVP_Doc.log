@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.4)  11 FEB 2026 17:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.12.4)  11 FEB 2026 18:16
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1449,16 +1449,16 @@ LaTeX Warning: No \author given.
 \tf@toc=\write7
 \openout7 = `BVP_Doc.toc'.
 
-<install_releases.jpg, id=42, 956.82469pt x 437.38406pt>
+<install_releases.jpg, id=57, 956.82469pt x 437.38406pt>
 File: install_releases.jpg Graphic file (type jpg)
 <use install_releases.jpg>
 Package pdftex.def Info: install_releases.jpg  used on input line 227.
-(pdftex.def)             Requested size: 421.57654pt x 192.70985pt.
-<install_download.jpg, id=43, 716.6775pt x 358.33875pt>
+(pdftex.def)             Requested size: 321.20117pt x 146.82655pt.
+<install_download.jpg, id=58, 716.6775pt x 358.33875pt>
 File: install_download.jpg Graphic file (type jpg)
 <use install_download.jpg>
 Package pdftex.def Info: install_download.jpg  used on input line 232.
-(pdftex.def)             Requested size: 421.57654pt x 210.78923pt.
+(pdftex.def)             Requested size: 321.20117pt x 160.60028pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1467,7 +1467,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-13.60004pt}.
 
-<fond2.jpg, id=44, 597.6729pt x 845.19765pt>
+<fond2.jpg, id=59, 597.6729pt x 845.19765pt>
 File: fond2.jpg Graphic file (type jpg)
 <use fond2.jpg>
 Package pdftex.def Info: fond2.jpg  used on input line 237.
@@ -1476,17 +1476,17 @@ Package pdftex.def Info: fond2.jpg  used on input line 237.
 ap}
 
  <./fond2.jpg> <./install_releases.jpg> <./install_download.jpg>]
-<install_prefs.jpg, id=57, 289.83281pt x 339.51843pt>
+<install_prefs.jpg, id=72, 289.83281pt x 339.51843pt>
 File: install_prefs.jpg Graphic file (type jpg)
 <use install_prefs.jpg>
 Package pdftex.def Info: install_prefs.jpg  used on input line 248.
 (pdftex.def)             Requested size: 200.75073pt x 235.16422pt.
-<install_fromdisk.jpg, id=58, 631.60968pt x 197.98969pt>
+<install_fromdisk.jpg, id=73, 631.60968pt x 197.98969pt>
 File: install_fromdisk.jpg Graphic file (type jpg)
 <use install_fromdisk.jpg>
 Package pdftex.def Info: install_fromdisk.jpg  used on input line 255.
 (pdftex.def)             Requested size: 421.57654pt x 132.15392pt.
-<installed.jpg, id=59, 518.6878pt x 164.86594pt>
+<installed.jpg, id=74, 518.6878pt x 164.86594pt>
 File: installed.jpg Graphic file (type jpg)
 <use installed.jpg>
 Package pdftex.def Info: installed.jpg  used on input line 262.
@@ -1504,7 +1504,7 @@ File: fond2.jpg Graphic file (type jpg)
 Package pdftex.def Info: fond2.jpg  used on input line 269.
 (pdftex.def)             Requested size: 597.67143pt x 845.19559pt.
 [2 <./install_prefs.jpg> <./install_fromdisk.jpg> <./installed.jpg>]
-<livefreed_overview.jpg, id=68, 250.68657pt x 666.23906pt>
+<livefreed_overview.jpg, id=83, 250.68657pt x 666.23906pt>
 File: livefreed_overview.jpg Graphic file (type jpg)
 <use livefreed_overview.jpg>
 Package pdftex.def Info: livefreed_overview.jpg  used on input line 280.
@@ -1522,22 +1522,22 @@ File: fond2.jpg Graphic file (type jpg)
 Package pdftex.def Info: fond2.jpg  used on input line 285.
 (pdftex.def)             Requested size: 597.67143pt x 845.19559pt.
 [3 <./livefreed_overview.jpg>]
-<livefreed_select.jpg, id=74, 527.72156pt x 267.24844pt>
+<livefreed_select.jpg, id=89, 527.72156pt x 267.24844pt>
 File: livefreed_select.jpg Graphic file (type jpg)
 <use livefreed_select.jpg>
 Package pdftex.def Info: livefreed_select.jpg  used on input line 297.
 (pdftex.def)             Requested size: 321.20117pt x 162.66245pt.
-<livefreed_start.jpg, id=75, 1405.50093pt x 404.26031pt>
+<livefreed_start.jpg, id=90, 1405.50093pt x 404.26031pt>
 File: livefreed_start.jpg Graphic file (type jpg)
 <use livefreed_start.jpg>
 Package pdftex.def Info: livefreed_start.jpg  used on input line 304.
 (pdftex.def)             Requested size: 421.57654pt x 121.25435pt.
-<livefreed_cam.jpg, id=76, 1144.275pt x 490.08093pt>
+<livefreed_cam.jpg, id=91, 1144.275pt x 490.08093pt>
 File: livefreed_cam.jpg Graphic file (type jpg)
 <use livefreed_cam.jpg>
 Package pdftex.def Info: livefreed_cam.jpg  used on input line 314.
 (pdftex.def)             Requested size: 381.42639pt x 163.3574pt.
-<livefreed_cam2.jpg, id=77, 223.58531pt x 88.07906pt>
+<livefreed_cam2.jpg, id=92, 223.58531pt x 88.07906pt>
 File: livefreed_cam2.jpg Graphic file (type jpg)
 <use livefreed_cam2.jpg>
 Package pdftex.def Info: livefreed_cam2.jpg  used on input line 321.
@@ -1556,7 +1556,7 @@ Package pdftex.def Info: fond2.jpg  used on input line 326.
 (pdftex.def)             Requested size: 597.67143pt x 845.19559pt.
 [4 <./livefreed_select.jpg> <./livefreed_start.jpg> <./livefreed_cam.jpg> <./li
 vefreed_cam2.jpg>]
-<livefreed_lens.jpg, id=86, 226.59656pt x 106.14656pt>
+<livefreed_lens.jpg, id=101, 226.59656pt x 106.14656pt>
 File: livefreed_lens.jpg Graphic file (type jpg)
 <use livefreed_lens.jpg>
 Package pdftex.def Info: livefreed_lens.jpg  used on input line 338.
@@ -1576,7 +1576,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 345--346
 
  []
 
-<livefreed_lens2.jpg, id=87, 231.11343pt x 690.32906pt>
+<livefreed_lens2.jpg, id=102, 231.11343pt x 690.32906pt>
 File: livefreed_lens2.jpg Graphic file (type jpg)
 <use livefreed_lens2.jpg>
 Package pdftex.def Info: livefreed_lens2.jpg  used on input line 351.
@@ -1590,35 +1590,105 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 File: fond2.jpg Graphic file (type jpg)
 <use fond2.jpg>
-Package pdftex.def Info: fond2.jpg  used on input line 354.
+Package pdftex.def Info: fond2.jpg  used on input line 356.
 (pdftex.def)             Requested size: 597.67143pt x 845.19559pt.
-[5 <./livefreed_lens.jpg> <./livefreed_lens2.jpg>] (BVP_Doc.aux)
+[5 <./livefreed_lens.jpg> <./livefreed_lens2.jpg>]
+<postprod_overview.jpg, id=109, 258.21469pt x 661.72218pt>
+File: postprod_overview.jpg Graphic file (type jpg)
+<use postprod_overview.jpg>
+Package pdftex.def Info: postprod_overview.jpg  used on input line 369.
+(pdftex.def)             Requested size: 200.75073pt x 514.4752pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 25.60004pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.60004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-13.60004pt}.
+
+File: fond2.jpg Graphic file (type jpg)
+<use fond2.jpg>
+Package pdftex.def Info: fond2.jpg  used on input line 376.
+(pdftex.def)             Requested size: 597.67143pt x 845.19559pt.
+[6 <./postprod_overview.jpg>]
+<postprod_camsetup.jpg, id=115, 316.93407pt x 132.495pt>
+File: postprod_camsetup.jpg Graphic file (type jpg)
+<use postprod_camsetup.jpg>
+Package pdftex.def Info: postprod_camsetup.jpg  used on input line 389.
+(pdftex.def)             Requested size: 220.8258pt x 92.31927pt.
+<postprod_camsetup2.jpg, id=116, 1009.52156pt x 595.47469pt>
+File: postprod_camsetup2.jpg Graphic file (type jpg)
+<use postprod_camsetup2.jpg>
+Package pdftex.def Info: postprod_camsetup2.jpg  used on input line 401.
+(pdftex.def)             Requested size: 421.57654pt x 248.67113pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 25.60004pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.60004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-13.60004pt}.
+
+File: fond2.jpg Graphic file (type jpg)
+<use fond2.jpg>
+Package pdftex.def Info: fond2.jpg  used on input line 408.
+(pdftex.def)             Requested size: 597.67143pt x 845.19559pt.
+[7 <./postprod_camsetup.jpg> <./postprod_camsetup2.jpg>]
+<postprod_camsetuplive.jpg, id=125, 1178.15157pt x 709.90219pt>
+File: postprod_camsetuplive.jpg Graphic file (type jpg)
+<use postprod_camsetuplive.jpg>
+Package pdftex.def Info: postprod_camsetuplive.jpg  used on input line 421.
+(pdftex.def)             Requested size: 421.57654pt x 254.02641pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 424--425
+
+ []
+
+<postprod_camsetuplive2.jpg, id=126, 860.46469pt x 435.87843pt>
+File: postprod_camsetuplive2.jpg Graphic file (type jpg)
+<use postprod_camsetuplive2.jpg>
+Package pdftex.def Info: postprod_camsetuplive2.jpg  used on input line 430.
+(pdftex.def)             Requested size: 361.35132pt x 183.04773pt.
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 25.60004pt, for example:
+(fancyhdr)                \setlength{\headheight}{25.60004pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-13.60004pt}.
+
+File: fond2.jpg Graphic file (type jpg)
+<use fond2.jpg>
+Package pdftex.def Info: fond2.jpg  used on input line 433.
+(pdftex.def)             Requested size: 597.67143pt x 845.19559pt.
+[8 <./postprod_camsetuplive.jpg> <./postprod_camsetuplive2.jpg>] (BVP_Doc.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-11-06>
  ***********
 Package rerunfilecheck Info: File `BVP_Doc.out' has not changed.
-(rerunfilecheck)             Checksum: D9EE0516E82B8027E9F7C0C832DB9DC4;1010.
+(rerunfilecheck)             Checksum: BC0A1DDD6FF222850CBCEFD072D3CBAE;1525.
  ) 
 Here is how much of TeX's memory you used:
- 39787 strings out of 467870
- 901478 string characters out of 5411095
- 1451866 words of memory out of 5000000
- 67956 multiletter control sequences out of 15000+600000
- 634806 words of font info for 85 fonts, out of 8000000 for 9000
+ 39857 strings out of 467870
+ 903031 string characters out of 5411095
+ 1452866 words of memory out of 5000000
+ 68004 multiletter control sequences out of 15000+600000
+ 635387 words of font info for 91 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,12n,118p,1006b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/admin.jonathan.julou/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmbx10.pfb><C:/Users/admin.jonathan.julou/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/admin.jonathan.julo
-u/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/
-Users/admin.jonathan.julou/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
-fonts/cm/cmr10.pfb><C:/Users/admin.jonathan.julou/AppData/Local/Programs/MiKTeX
-/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/admin.jonathan.julou/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on BVP_Doc.pdf (5 pages, 1007499 bytes).
+ <C:\Users\admin.jonathan.julou\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen
+/ec/dpi600\tcrm1000.pk><C:/Users/admin.jonathan.julou/AppData/Local/Programs/Mi
+KTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/admin.jonathan.julou/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/User
+s/admin.jonathan.julou/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
+s/cm/cmcsc10.pfb><C:/Users/admin.jonathan.julou/AppData/Local/Programs/MiKTeX/f
+onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/admin.jonathan.julou/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/admin.
+jonathan.julou/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cms
+y10.pfb>
+Output written on BVP_Doc.pdf (8 pages, 1575877 bytes).
 PDF statistics:
- 127 PDF objects out of 1000 (max. 8388607)
- 25 named destinations out of 1000 (max. 500000)
- 20614 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 172 PDF objects out of 1000 (max. 8388607)
+ 36 named destinations out of 1000 (max. 500000)
+ 22711 words of extra memory for PDF output out of 24883 (max. 10000000)
 

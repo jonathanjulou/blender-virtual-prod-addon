@@ -6,3 +6,6 @@
 \contentsline {subsection}{\numberline {II.1}Basic pose tracking}{4}{subsection.2.1}%
 \contentsline {subsection}{\numberline {II.2}Basic lens tracking}{4}{subsection.2.2}%
 \contentsline {subsection}{\numberline {II.3}Using a lens file}{5}{subsection.2.3}%
+\contentsline {section}{\numberline {III}Post Prod Tools}{6}{section.3}%
+\contentsline {subsection}{\numberline {III.1}Camera Setup}{7}{subsection.3.1}%
+\contentsline {subsubsection}{\numberline {III.1.1}Using camera setup in live freed mode}{8}{subsubsection.3.1.1}%

@@ -224,12 +224,12 @@ Go to \href{https://github.com/jonathanjulou/blender-virtual-prod-addon}{https:/
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=420px]{install_releases.jpg}
+\includegraphics[width=320px]{install_releases.jpg}
 \end{figure}
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=420px]{install_download.jpg}
+\includegraphics[width=320px]{install_download.jpg}
 \end{figure}
 
 
@@ -349,6 +349,85 @@ Now the camera has usable parameters:
 \begin{figure}[H]
 \centering
 \includegraphics[width=145px]{livefreed_lens2.jpg}
+\end{figure}
+
+
+
+\newpage
+\AddToShipoutPictureBG*{\includegraphics{fond2.jpg}}
+\color{black}
+\arrayrulecolor{black}
+
+
+
+\section{Post Prod Tools}
+
+The Post Prod Tools part of the addon is found in the \textbf{Output} tab:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=200px]{postprod_overview.jpg}
+\end{figure}
+
+These tools are mostly intended to handle CSV recordings of tracking data (based on EZtrack format), but also provides useful tools for handling compositing with distortion and overscan in Blender, as well as setting up the camera hierarchy quickly.
+
+
+
+\newpage
+\AddToShipoutPictureBG*{\includegraphics{fond2.jpg}}
+\color{black}
+\arrayrulecolor{black}
+
+
+
+\subsection{Camera Setup}
+
+Press \textbf{Initialize Camera Hierarchy}:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=220px]{postprod_camsetup.jpg}
+\end{figure}
+
+This creates three objects:
+\begin{itemize}
+\item Tracking Origin: The origin of the tracking system.
+\item Tracking Gripper: The position and rotation given by the FreeD stream, can be seen as the tracker, or the last degree of freedom of a tracking kinematic chain.
+\item Camera: The camera. This represents the position of the center of the sensor of the real camera.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=420px]{postprod_camsetup2.jpg}
+\end{figure}
+
+This hierarchy is interesting, as it allows to refine both the global position in the 3D scene by moving the origin, and the camera alignment by moving the camera under the gripper object after the fact.
+
+
+
+\newpage
+\AddToShipoutPictureBG*{\includegraphics{fond2.jpg}}
+\color{black}
+\arrayrulecolor{black}
+
+
+
+\subsubsection{Using camera setup in live freed mode}
+
+Set the \textbf{Pose Target} to \textbf{TrackingGripper} and the \textbf{Lens Target} to \textbf{Camera}:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=420px]{postprod_camsetuplive.jpg}
+\end{figure}
+
+This way lens data is applied on the camera and positional data on the gripper.\\
+
+Note how the camera is placed forward of the gripper object. This is because the lens data applies the \textbf{Entrance Pupil Distance} (EPD, or nodal offset) as a driver on the camera's Z axis, bringing it forward according to the current zoom level and lens file:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=360px]{postprod_camsetuplive2.jpg}
 \end{figure}
 
 \end{document}
