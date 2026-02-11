@@ -4,3 +4,5 @@
 \contentsline {subsection}{\numberline {I.2}Install package in Blender}{2}{subsection.1.2}%
 \contentsline {section}{\numberline {II}Live FreeD input}{3}{section.2}%
 \contentsline {subsection}{\numberline {II.1}Basic pose tracking}{4}{subsection.2.1}%
+\contentsline {subsection}{\numberline {II.2}Basic lens tracking}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {II.3}Using a lens file}{5}{subsection.2.3}%

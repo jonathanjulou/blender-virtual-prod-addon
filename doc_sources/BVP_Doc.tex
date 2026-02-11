@@ -294,7 +294,7 @@ You can apply the tracking data to any Blender object. Here we use an Empty. Sel
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=420px]{livefreed_select.jpg}
+\includegraphics[width=320px]{livefreed_select.jpg}
 \end{figure}
 
 Press \textbf{Start}. The object will start moving according to the FreeD data. For each packet received a keyframe is written:
@@ -304,4 +304,63 @@ Press \textbf{Start}. The object will start moving according to the FreeD data. 
 \includegraphics[width=420px]{livefreed_start.jpg}
 \end{figure}
 
+
+\subsection{Basic lens tracking}
+
+Now we target a Blender Camera object as target for both pose and lens:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=380px]{livefreed_cam.jpg}
+\end{figure}
+
+Now FreeD Zoom and Focus data is written as well as Custom Properties in the camera. Note that FreeD does not carry meaningful information like focal length or focus distance, so they still get the default value:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=200px]{livefreed_cam2.jpg}
+\end{figure}
+
+
+
+\newpage
+\AddToShipoutPictureBG*{\includegraphics{fond2.jpg}}
+\color{black}
+\arrayrulecolor{black}
+
+
+\subsection{Using a lens file}
+
+It is possible to get useful camera intrinsics using a lens file. For this we will go to the \textbf{[BVP] Lens Mapping} tab:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=200px]{livefreed_lens.jpg}
+\end{figure}
+
+Select a \textbf{OpenLensFile} JSON file as lens file (standardized output from Miraxyz calibration software, currently this is the only mapping format supported), and press \textbf{Load Lens File}.\\
+
+Then select the Camera object as \textbf{Lens Target} and press \textbf{Setup Drivers on Camera} to create the drivers for focal length and focus distance.\\
+
+Loading the lens file declares functions that can be used from Blender drivers to convert raw zoom and focus values into calibrated data. This is more robust than doing the conversion directly in Python when not using the auto-keyframing, and allows using the lens file mapping without the live Freed input, by manually moving and keyframing the Zoom and Focus Custom Data.\\
+
+Now the camera has usable parameters:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=145px]{livefreed_lens2.jpg}
+\end{figure}
+
 \end{document}
+
+
+
+
+
+
+
+
+
+
+
+
