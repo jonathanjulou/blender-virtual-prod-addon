@@ -1,0 +1,307 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Journal Article
+% LaTeX Template
+% Version 1.4 (15/5/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com) with extensive modifications by
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+% compress pdf:
+% use cmd, not powershell!
+% gswin64c -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=small.pdf montageCube.pdf
+
+%\pdfminorversion=5
+%\pdfobjcompresslevel=9
+%\pdfcompresslevel=9
+%\pdfimageresolution=48
+
+\documentclass{article}
+
+\usepackage{amsmath}
+\usepackage{tabto}
+
+\usepackage{pgfplots}
+
+\usepackage[english]{babel}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=10mm,
+ right=10mm,
+ inner=10mm,
+ top=20mm,
+ bottom=18mm,
+ }
+ 
+ \setlength{\parindent}{0cm} 
+
+\usepackage{comment}
+%\usepackage{float}
+
+%\usepackage[sc]{mathpazo} % Use the Palatino font
+%\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+%\linespread{1.05} % Line spacing - Palatino needs more space between lines
+\usepackage{microtype} % Slightly tweak font spacing for aesthetics
+
+\usepackage[english]{babel} % Language hyphenation and typographical rules
+
+\usepackage{geometry} % Document margins
+\usepackage[hang, small,labelfont=bf,up,textfont=it,up]{caption} % Custom captions under/above floats in tables or figures
+\usepackage{booktabs} % Horizontal rules in tables
+
+\usepackage{lettrine} % The lettrine is the first enlarged letter at the beginning of the text
+
+\usepackage{enumitem} % Customized lists
+\setlist[itemize]{noitemsep} % Make itemize lists more compact
+
+\usepackage{abstract} % Allows abstract customization
+\renewcommand{\abstractnamefont}{\normalfont\bfseries} % Set the "Abstract" text to bold
+\renewcommand{\abstracttextfont}{\normalfont\small\itshape} % Set the abstract itself to small italic text
+
+\usepackage{titlesec} % Allows customization of titles
+\renewcommand\thesection{\Roman{section}} % Roman numerals for the sections
+
+\titleformat{\section}[block]{\large\scshape\centering}{\thesection.}{1em}{} % Change the look of the section titles
+\titleformat{\subsection}[block]{\large}{\thesubsection.}{1em}{} % Change the look of the section titles
+
+\usepackage{titling} % Customizing the title section
+
+\usepackage{hyperref} % For hyperlinks in the PDF
+\usepackage{xcolor}
+\usepackage{graphicx}
+%\usepackage[ruled,vlined]{algorithm2e}
+
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{defn}{Definition} % definition numbers are dependent on theorem numbers
+\newtheorem{exmp}{Example} % same for example numbers
+
+\usepackage{svg}
+\usepackage{svg-extract}
+
+\usepackage{colortbl}
+
+\usepackage{fancyhdr}
+
+%===========================================================================================================
+\fancypagestyle{plain}{ %
+\fancyfoot[C]{\textcolor{black}{\thepage}}
+%\fancyfoot[R]{\textcolor{black}{CONFIDENTIAL - DO NOT DISTRIBUTE}}
+\color{white}
+\pagestyle{fancy}
+\rhead{\vspace{10pt}\textcolor{white}{\textbf{Blender Virtual Prod Addon Documentation}}}
+\lhead{\vspace{2pt}\textcolor{white}{\textbf{J.Julou}}
+\arrayrulecolor{white}
+\hrule
+%\includegraphics[scale=0.07]{Logo Ezprofile juste logo.png}
+%\hspace{1ex}
+%\includegraphics[scale=0.15]{logo-noir-_oarostudio.png}
+}
+\color{black}
+}
+
+%===========================================================================================================
+\pagestyle{fancy}
+\fancyfoot[C]{\textcolor{black}{\thepage}}
+%\fancyfoot[R]{\textcolor{black}{CONFIDENTIAL - DO NOT DISTRIBUTE}}
+\color{white}
+\rhead{\vspace{10pt}\textcolor{white}{\textbf{Blender Virtual Prod Addon Documentation}}}
+\lhead{\vspace{2pt}\textcolor{white}{\textbf{J.Julou}}
+\arrayrulecolor{white}
+\hrule
+%\includegraphics[scale=0.07]{Logo Ezprofile juste logo.png}
+%\hspace{1ex}
+%\includegraphics[scale=0.15]{logo-noir-_oarostudio.png}
+}
+\color{black}
+
+\usepackage{listings}
+
+%\lstset{language=Python,
+%basicstyle=\ttfamily,
+%columns=fullflexible
+%}
+
+\usepackage{eso-pic,graphicx}
+\usepackage{multicol}
+
+\usepackage[utf8]{inputenc}
+
+% Default fixed font does not support bold face
+\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{10} % for bold
+\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{10}  % for normal
+
+% Custom colors
+\usepackage{color}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+language=Python,
+basicstyle=\ttm,
+morekeywords={self},              % Add keywords here
+keywordstyle=\ttb\color{blue},
+emph={print},          % Custom highlighting
+emphstyle=\ttb\color{deepred},    % Custom highlighting style
+stringstyle=\color{deepgreen},
+frame=tb,                         % Any extra options here
+showstringspaces=false
+}}
+
+
+% Python environment
+\lstnewenvironment{python}[1][]
+{
+\pythonstyle
+\lstset{#1}
+}
+{}
+
+% Python for external files
+\newcommand\pythonexternal[2][]{{
+\pythonstyle
+\lstinputlisting[#1]{#2}}}
+
+% Python for inline
+\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}
+
+
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\setlength{\droptitle}{-0\baselineskip} % Move the title up
+
+\title{\vspace{-4ex}\hspace{2.5ex}\color{black}\LARGE{\textbf{Blender Virtual Prod Addon Documentation}} \vspace{-2ex}} % Article title
+
+\date{11/02/2026}
+\renewcommand{\maketitlehookd}{%
+%\vspace{-7ex}
+
+
+}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+% Print the title
+\maketitle
+
+
+%\AddToShipoutPictureBG*{\hspace{-0.65ex}\includesvg{fond.svg}}
+\AddToShipoutPictureBG*{\includegraphics{fond2.jpg}}
+
+\tableofcontents
+
+
+\section{Installation}
+
+\subsection{Github page}
+
+Go to \href{https://github.com/jonathanjulou/blender-virtual-prod-addon}{https://github.com/jonathanjulou/blender-virtual-prod-addon}. Go to the \textbf{Releases} page and download the latest stable release:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=420px]{install_releases.jpg}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=420px]{install_download.jpg}
+\end{figure}
+
+
+
+\newpage
+\AddToShipoutPictureBG*{\includegraphics{fond2.jpg}}
+\color{black}
+\arrayrulecolor{black}
+
+\subsection{Install package in Blender}
+
+Open Blender and navigate to \textbf{Edit} $\rightarrow$ \textbf{Preferences}:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=200px]{install_prefs.jpg}
+\end{figure}
+
+Open the \textbf{Add-Ons} tab, and click the little down arrow at the top-right. Select \textbf{Install from Disk...}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=420px]{install_fromdisk.jpg}
+\end{figure}
+
+Select the .zip file downloaded from the Github release. This should appear:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=420px]{installed.jpg}
+\end{figure}
+
+The plugin is now correctly installed in Blender.
+
+
+
+\newpage
+\AddToShipoutPictureBG*{\includegraphics{fond2.jpg}}
+\color{black}
+\arrayrulecolor{black}
+
+\section{Live FreeD input}
+
+The Live FreeD Input part of the addon is found in the \textbf{Scene} tab:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=200px]{livefreed_overview.jpg}
+\end{figure}
+
+
+
+\newpage
+\AddToShipoutPictureBG*{\includegraphics{fond2.jpg}}
+\color{black}
+\arrayrulecolor{black}
+
+
+\subsection{Basic pose tracking}
+
+You can apply the tracking data to any Blender object. Here we use an Empty. Select it in one of the 4 receivers (the main receiver, dedicated for camera, is Receiver 0):
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=420px]{livefreed_select.jpg}
+\end{figure}
+
+Press \textbf{Start}. The object will start moving according to the FreeD data. For each packet received a keyframe is written:
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=420px]{livefreed_start.jpg}
+\end{figure}
+
+\end{document}

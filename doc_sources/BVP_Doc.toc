@@ -1,0 +1,6 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {I}Installation}{1}{section.1}%
+\contentsline {subsection}{\numberline {I.1}Github page}{1}{subsection.1.1}%
+\contentsline {subsection}{\numberline {I.2}Install package in Blender}{2}{subsection.1.2}%
+\contentsline {section}{\numberline {II}Live FreeD input}{3}{section.2}%
+\contentsline {subsection}{\numberline {II.1}Basic pose tracking}{4}{subsection.2.1}%
