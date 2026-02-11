@@ -31,82 +31,93 @@ class LensMapper:
                 self.lens_file.initialize(lens_file)
             else:
                 print("path {} does not exist".format(lens_file))
-        
-        
-    """
-    def update_camera(self):
-        if self.is_camera and self.camera is not None:
-            self.camera.data['zoom'] = self.zoom
-            self.camera.data['focus'] = self.focus
-            self.camera.data.keyframe_insert(data_path='["zoom"]', frame=self.current_frame)
-            self.camera.data.keyframe_insert(data_path='["focus"]', frame=self.current_frame)
-        
-            if self.lens_file is not None and self.lens_file != "":
-                k1U_ocv = self.lens_file.getK1UndistortOCV(self.zoom, self.focus)
-                k2U_ocv = self.lens_file.getK2UndistortOCV(self.zoom, self.focus)
-                k1D_ocv = self.lens_file.getK1DistortOCV(self.zoom, self.focus)
-                k2D_ocv = self.lens_file.getK2DistortOCV(self.zoom, self.focus)
-                focal_ocv = self.lens_file.getFocalPix(self.zoom, self.focus)
-                
-                k1U_widthone = k1U_ocv * (self.lens_file.getImageWidth() / focal_ocv)**2
-                k2U_widthone = k2U_ocv * (self.lens_file.getImageWidth() / focal_ocv)**4
-                k1D_widthone = k1D_ocv * (self.lens_file.getImageWidth() / focal_ocv)**2
-                k2D_widthone = k2D_ocv * (self.lens_file.getImageWidth() / focal_ocv)**4
-                
-                self.camera.data['K1 Undisto'] = k1U_widthone
-                self.camera.data['K2 Undisto'] = k2U_widthone
-                self.camera.data['K1 Disto'] = k1D_widthone
-                self.camera.data['K2 Disto'] = k2D_widthone
-                self.camera.data.keyframe_insert(data_path='["K1 Undisto"]', frame=self.current_frame)
-                self.camera.data.keyframe_insert(data_path='["K2 Undisto"]', frame=self.current_frame)
-                self.camera.data.keyframe_insert(data_path='["K1 Disto"]', frame=self.current_frame)
-                self.camera.data.keyframe_insert(data_path='["K2 Disto"]', frame=self.current_frame)
-                
-                # TODO add a try except here to handle object not being a camera
-                self.camera.data.lens = self.lens_file.getFocalMM(self.zoom, self.focus)
-                self.camera.data.keyframe_insert(data_path='lens', frame=self.current_frame)
-                
-                self.camera.data.dof.focus_distance = self.lens_file.getFocusDistanceM(self.zoom, self.focus)
-                self.camera.data.dof.keyframe_insert(data_path='focus_distance', frame=self.current_frame)
-    """
                 
                 
     def getK1U(self, zoom, focus):
+        # no lens file, return default value
+        if self.lens_file is None:
+            return 0
+            
         if self.isOCV:
             return self.lens_file.getK1UndistortWidthNormalized(zoom, focus)
         return self.lens_file.getK1UndistortOCV(zoom, focus)
-        
+    
+    
     def getK1D(self, zoom, focus):
+        # no lens file, return default value
+        if self.lens_file is None:
+            return 0
+        
         if self.isOCV:
             return self.lens_file.getK1DistortWidthNormalized(zoom, focus)
         return self.lens_file.getK1DistortOCV(zoom, focus)
-        
+    
+    
     def getK2U(self, zoom, focus):
+        # no lens file, return default value
+        if self.lens_file is None:
+            return 0
+        
         if self.isOCV:
             return self.lens_file.getK2UndistortWidthNormalized(zoom, focus)
         return self.lens_file.getK2UndistortOCV(zoom, focus)
-        
+    
+    
     def getK2D(self, zoom, focus):
+        # no lens file, return default value
+        if self.lens_file is None:
+            return 0
+        
         if self.isOCV:
             return self.lens_file.getK2DistortWidthNormalized(zoom, focus)
         return self.lens_file.getK2DistortOCV(zoom, focus)
-        
+    
+    
     def getFocal(self, zoom, focus):
+        # no lens file, return default value
+        if self.lens_file is None:
+            return 50 #mm
+        
         return self.lens_file.getFocalMM(zoom, focus)
-        
+    
+    
     def getFocus(self, zoom, focus):
+        # no lens file, return default value
+        if self.lens_file is None:
+            return 1 #m
+        
         return self.lens_file.getFocusDistanceM(zoom, focus)
-        
+    
+    
     def getEPD(self, zoom, focus):
+        # no lens file, return default value
+        if self.lens_file is None:
+            return 0 #m
+        
         return self.lens_file.getNodal(zoom, focus)
-        
+    
+    
     def getSensorWidth(self):
+        # no lens file, return default value
+        if self.lens_file is None:
+            return 9.59
+        
         return self.lens_file.getSensorWidth()
-        
+    
+    
     def getCx(self):
-        return self.lens_file.getCxPix()
+        # no lens file, return default value
+        if self.lens_file is None:
+            return 0
         
+        return self.lens_file.getCxPix()
+    
+    
     def getCy(self):
+        # no lens file, return default value
+        if self.lens_file is None:
+            return 0
+        
         return self.lens_file.getCyPix()
 
 

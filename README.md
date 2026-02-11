@@ -2,9 +2,9 @@
 
 A utility blender plugin to simplify virtual production workflows.
 
-There are 3 components:\
-- Lens Mapping : Read a lens file and make it available as blender drivers conversion functions\
-- Live Input : Receive tracking data using the FreeD protocol\
+There are 3 components:
+- Lens Mapping : Read a lens file and make it available as blender drivers conversion functions
+- Live Input : Receive tracking data using the FreeD protocol
 - Post Prod Tools : Customizable compositing presets to work with real camera plates 
 
 

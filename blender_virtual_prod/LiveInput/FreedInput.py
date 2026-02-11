@@ -41,7 +41,7 @@ class FreedReferential:
         self.is_camera = is_camera
         self.camera = camera
         
-        if self.is_camera:
+        if self.is_camera and self.camera is not None:
             # create custom curves for lens data
             self.camera.data['0_zoom'] = 0
             self.camera.data['0_focus'] = 0
