@@ -1,4 +1,4 @@
-# blender-virtual-prod-plugin
+# blender-virtual-prod-addon
 
 A utility blender plugin to simplify virtual production workflows.
 
